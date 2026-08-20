@@ -155,19 +155,21 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
+# ==================== تشغيل البوت ====================
+# ضع توكن البوت الخاص بك هنا بين علامتي التنصيص
+import os
 import threading
 import http.server
 import socketserver
 
 def run_web():
-    PORT = 10000
+    PORT = int(os.environ.get("PORT", 10000))
     Handler = http.server.SimpleHTTPRequestHandler
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         print(f"Serving web on port {PORT}")
         httpd.serve_forever()
 
-# تشغيل سيرفر الويب في الخلفية لخدع Render
 threading.Thread(target=run_web).start()
-# ==================== تشغيل البوت ====================
-# ضع توكن البوت الخاص بك هنا بين علامتي التنصيص
+
+bot.run("MTUzOTk5MzQxNjM1NDYzNTc4Ng.Gcnobd.of-nnldblYzXARI15uDmz31y-y__SM4Qlugy-I")
 # bot.run("MTUzOTk5MzQxNjM1NDYzNTc4Ng.GCnobd.oF-nnldbLyZXARIl5uDmz31y-y__SM4Qlugy-I")
