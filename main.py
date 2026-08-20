@@ -171,5 +171,4 @@ def run_web():
 
 threading.Thread(target=run_web).start()
 
-bot.run("MTUzOTk5MzQxNjM1NDYzNTc4Ng.Gcnobd.of-nnldblYzXARI15uDmz31y-y__SM4Qlugy-I")
-# bot.run("MTUzOTk5MzQxNjM1NDYzNTc4Ng.GCnobd.oF-nnldbLyZXARIl5uDmz31y-y__SM4Qlugy-I")
+bot.run("MTUzOTk5MzQxNjM1NDYzNTc4Ng.GNL00T.HaaIAbt2F7RED1-vRMz8rds9aJE0b6Nb01LUd4")
