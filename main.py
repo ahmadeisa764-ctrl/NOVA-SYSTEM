@@ -1,4 +1,11 @@
-import discord
+import os, subprocess
+try:
+    import discord
+except ImportError:
+    subprocess.check_call(["pip", "install", "discord.py"])
+    import discord
+    
+    import discord
 from discord.ext import commands
 import datetime
 
